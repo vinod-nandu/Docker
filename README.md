@@ -48,11 +48,10 @@ Setup of Docker on Windows
   to run the docker commands
 
 
-===============================================================
 Day 2
 ===============================================================
 Setup of Docker on an Ubuntu Linux Machine
-=================================================
+--------------------------------------------------
 1 Create an Ubuntu linux instances on AWS cloud
 
 2 Connect to that instance using gitbash
@@ -121,9 +120,10 @@ Working on docker images
 
 10 To delete all image
    docker system prune -af
+   
 ====================================================================
 Day 3
-==============================
+-------------------------------------------------------------------
 11 To create a docker image from a dockerfile
    docker build -t image_name .
 
@@ -212,7 +212,7 @@ Working on docker containers
     docker container container_id/container_name top
 
 Working on docker networks
-===============================
+----------------------------------
 31 To see the list of docker networks
    docker network ls
 
@@ -255,7 +255,7 @@ public_ip_of_dockerhost:9999
 
 =======================================================================
 UseCase 2
-===================
+=============
 Create a jenkins container and perform automatic port mapping
 docker run  --name myjenkins -d -P jenkins/jenkins
 
