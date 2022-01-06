@@ -1,0 +1,74 @@
+1  docker ls
+    2  docker images ls
+    3  sudo apt-get update
+    4  curl -fsSL https://get.docker.com -o get-docker.sh
+    5  sh get-docker.sh
+    6  vim /etc/hostname
+    7  init 16
+    8  init 6
+    9  docker ls
+   10  docker images ls
+   11  docker swarm init
+   12  docker node ls
+   13  docker  node ls
+   14  docker service create --name webserver -p 8888:80 --replicas 5 nginx
+   15  docker service ls
+   16  docker service create --name mydb --replicas 3 -e MYSQL_ROOT_PASSWORD=Vinod123# mysql
+   17  docker service ps
+   18  docker service ps mydb
+   19  docker service ls
+   20  docker service ps mydb
+   21  docker service rm mydb
+   22  clear
+   23  docker service ls
+   24  docker service rm webserver
+   25  docker service create --name appserver -p 9999:80 --replicas 4 http
+   26  docker service create --name appserver -p 9999:80 --replicas 4 httpd
+   27  docker service create --name appserver -p 9000:80 --replicas 4 httpd
+   28  docer service ls
+   29  docer service rm appserver
+   30  docker service rm appserver
+   31  docker service create --name appserver1 -p 9090:80 --replicas 4 httpd
+   32  docker service ls
+   33  docker service ps
+   34  docker service ps appserver1
+   35  docker service scale appserver1=6
+   36  docker service ls
+   37  docker service appserver1
+   38  docker service inspect appserver1
+   39  docker service ps appserver1
+   40  docker service scale appserver1=3
+   41  docker service ps appserver1
+   42  docker service
+   43  docker service logs appserver1
+   44  docker service rm appserver1
+   45  docker ps -a
+   46  cocker service create --name myredis -P --replicas 5 redis:3
+   47  docker service create --name myredis -P --replicas 5 redis:3
+   48  docker service create --name myredis - P --replicas 5 redis:3
+   49  docker service create --name myredis --replicas 5 redis:3
+   50  docker service ps
+   51  docker service ps myredis
+   52  docker service update --image redis:4 myredis
+   53  docker servie ps myredis
+   54  docker service ps myredis
+   55  docker service update --rollback myredis
+   56  docker servie ps myredis
+   57  docker service ps myredis
+   58  docker service ps myredis | grep -v \_
+   59  docker service rm myredis
+   60  docker servie ls
+   61  docker node ls
+   62  docker node rm worker2
+   63  docker node ls
+   64  docker swarm join-token worker
+   65  docker node ls
+   66  docker swarm join-token manager
+   67  docker node ls
+   68  docker service rm wnnsapgq22e6d1hhm2my6d1p4
+   69  docker node ls
+   70  docker node rm worker2
+   71  docker node promote worker1
+   72  docker node ls
+   73  docker node demote worker1
+   74  docker node ls
